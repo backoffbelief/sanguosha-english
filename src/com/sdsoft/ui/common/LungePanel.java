@@ -16,7 +16,6 @@ import com.sdsoft.model.gameplay.Player;
 import com.sdsoft.ui.drivers.MainUI;
 
 public class LungePanel extends JPanel {
-	// JButton ready = new JButton("Ready");
 	JButton start = new JButton("Start");
 	JPanel centerPanel = new JPanel();
 	Set<Player> players = new HashSet<Player>();
@@ -37,6 +36,14 @@ public class LungePanel extends JPanel {
 			}
 		});
 		this.add(wrapper, BorderLayout.SOUTH);
+		start.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(final ActionEvent e) {
+				MainUI.getInstance().gameStart();
+			}
+
+		});
 	}
 
 	public void update(final List<Player> players) {

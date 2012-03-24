@@ -76,12 +76,12 @@ public class GameClient {
 
 	public void pickRulerHero(final SGSPacket packet) {
 		final List<Hero> heros = new ArrayList<Hero>(packet.getHeros());
-		new SelectHeroDialog(me, heros);
-		heros.remove(0);
-		// final SGSPacket response = new
-		// SGSPacket(Action.PickRulerHeroFinished);
-		// response.setHeros(heros);
-		// send(packet);
+		SelectHeroDialog dialog = new SelectHeroDialog(me, heros);
+		Hero selectedHero = dialog.getSelectedHero();
+		heros.remove(selectedHero);
+		final SGSPacket response = new SGSPacket(Action.PickRulerHeroFinished);
+		response.setHeros(heros);
+		send(packet);
 	}
 
 	public void pickHero(final List<Hero> heros) {

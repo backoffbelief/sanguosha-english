@@ -23,9 +23,9 @@ public class MainUI extends JFrame {
 	JPanel centerPanel = new JPanel();
 	CardLayout card = new CardLayout();
 	private static final String BACKGROUND = ".\\res\\image\\system\\background\\staring_background.jpg";
-	private boolean isHost;
 	private StartingPanel startingPanel;
 	private LungePanel lungePanel;
+	GameServer server;
 
 	public static MainUI getInstance() {
 		if (instance == null) {
@@ -87,7 +87,7 @@ public class MainUI extends JFrame {
 		lungePanel = new LungePanel(true);
 		centerPanel.add(LUNGE_NAME, lungePanel);
 		card.show(centerPanel, LUNGE_NAME);
-		final GameServer server = new GameServer("testserver", 12345, 30, 8, true);
+		server = new GameServer("testserver", 12345, 30, 8, true);
 	}
 
 	public void createClientLungePanel(final String serverAddress, final int serverPort, final String name) {
@@ -95,6 +95,12 @@ public class MainUI extends JFrame {
 		centerPanel.add(LUNGE_NAME, lungePanel);
 		card.show(centerPanel, LUNGE_NAME);
 		final GameClient client = new GameClient(serverPort, serverAddress, name);
+	}
+
+	public void gameStart() {
+		if (server != null) {
+			server.startGame();
+		}
 	}
 
 	public static void main(final String[] args) {
@@ -105,4 +111,5 @@ public class MainUI extends JFrame {
 			}
 		});
 	}
+
 }
