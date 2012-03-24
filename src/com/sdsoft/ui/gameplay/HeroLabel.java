@@ -1,4 +1,4 @@
-package com.sdsoft.ui;
+package com.sdsoft.ui.gameplay;
 
 import java.awt.Color;
 import java.awt.event.MouseEvent;
@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.border.LineBorder;
 
 import com.sdsoft.model.gameplay.Hero;
+import com.sdsoft.ui.dialog.SelectHeroDialog;
 import com.sdsoft.util.ImageUtil;
 
 public class HeroLabel extends JLabel implements MouseMotionListener, MouseListener {

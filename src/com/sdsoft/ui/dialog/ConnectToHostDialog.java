@@ -1,4 +1,4 @@
-package com.sdsoft.ui;
+package com.sdsoft.ui.dialog;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -9,6 +9,8 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
+import com.sdsoft.ui.drivers.MainUI;
 
 public class ConnectToHostDialog extends JDialog {
 	JTextField ip1 = new JTextField("192", 3);

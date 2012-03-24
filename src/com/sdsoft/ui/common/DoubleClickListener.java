@@ -1,4 +1,4 @@
-package com.sdsoft.ui;
+package com.sdsoft.ui.common;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;

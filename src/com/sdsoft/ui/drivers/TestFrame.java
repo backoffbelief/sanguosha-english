@@ -1,4 +1,4 @@
-package com.sdsoft.ui;
+package com.sdsoft.ui.drivers;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;

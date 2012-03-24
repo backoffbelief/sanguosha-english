@@ -1,4 +1,4 @@
-package com.sdsoft.ui;
+package com.sdsoft.ui.drivers;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -11,6 +11,8 @@ import javax.swing.UIManager;
 
 import com.sdsoft.model.communication.GameClient;
 import com.sdsoft.model.communication.GameServer;
+import com.sdsoft.ui.common.LungePanel;
+import com.sdsoft.ui.common.StartingPanel;
 import com.sdsoft.util.ImageUtil;
 
 public class MainUI extends JFrame {

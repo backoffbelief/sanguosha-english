@@ -1,4 +1,4 @@
-package com.sdsoft.ui;
+package com.sdsoft.ui.common;
 
 import java.awt.FlowLayout;
 import java.awt.Graphics;
@@ -11,6 +11,9 @@ import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+
+import com.sdsoft.ui.dialog.ConnectToHostDialog;
+import com.sdsoft.ui.drivers.MainUI;
 
 public class StartingPanel extends JPanel {
 	private static final String BACKGROUND_PREFIX = ".\\res\\image\\system\\background\\bg";

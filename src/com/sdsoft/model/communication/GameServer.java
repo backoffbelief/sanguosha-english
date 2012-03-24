@@ -7,7 +7,7 @@ import java.util.Map;
 
 import com.sdsoft.model.gameplay.CentrolController;
 import com.sdsoft.model.gameplay.Player;
-import com.sdsoft.ui.MainUI;
+import com.sdsoft.ui.drivers.MainUI;
 
 public class GameServer {
 	private final String serverName;

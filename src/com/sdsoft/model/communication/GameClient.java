@@ -7,8 +7,8 @@ import org.apache.log4j.Logger;
 
 import com.sdsoft.model.gameplay.Hero;
 import com.sdsoft.model.gameplay.Player;
-import com.sdsoft.ui.MainUI;
-import com.sdsoft.ui.SelectHeroDialog;
+import com.sdsoft.ui.dialog.SelectHeroDialog;
+import com.sdsoft.ui.drivers.MainUI;
 
 public class GameClient {
 

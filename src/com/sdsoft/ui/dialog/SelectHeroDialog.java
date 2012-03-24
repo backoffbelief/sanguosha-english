@@ -1,4 +1,4 @@
-package com.sdsoft.ui;
+package com.sdsoft.ui.dialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +8,7 @@ import javax.swing.JDialog;
 
 import com.sdsoft.model.gameplay.Hero;
 import com.sdsoft.model.gameplay.Player;
+import com.sdsoft.ui.gameplay.HeroLabel;
 
 public class SelectHeroDialog extends JDialog {
 	List<HeroLabel> labels = new ArrayList<HeroLabel>();
