@@ -89,4 +89,8 @@ public class HeroLabel extends JLabel implements MouseMotionListener, MouseListe
 		// // label.updateUI();
 		// }
 	}
+
+	public Hero getHero() {
+		return hero;
+	}
 }

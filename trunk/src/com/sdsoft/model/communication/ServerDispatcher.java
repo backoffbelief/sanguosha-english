@@ -1,8 +1,8 @@
 package com.sdsoft.model.communication;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.PrintWriter;
-
 
 public class ServerDispatcher extends Thread {
 	private final GameServer server;
@@ -29,7 +29,14 @@ public class ServerDispatcher extends Thread {
 				dispatch(dp);
 			}
 		} catch (final Exception e) {
-			e.printStackTrace();
+			try {
+				in.close();
+				out.close();
+			} catch (final IOException e1) {
+				e1.printStackTrace();
+			}
+			server.unregisterPlayer(ip, port);
+			// e.printStackTrace();
 		}
 	}
 

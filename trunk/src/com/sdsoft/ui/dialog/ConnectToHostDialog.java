@@ -15,8 +15,8 @@ import com.sdsoft.ui.drivers.MainUI;
 public class ConnectToHostDialog extends JDialog {
 	JTextField ip1 = new JTextField("192", 3);
 	JTextField ip2 = new JTextField("168", 3);
-	JTextField ip3 = new JTextField("1", 3);
-	JTextField ip4 = new JTextField("4", 3);
+	JTextField ip3 = new JTextField("0", 3);
+	JTextField ip4 = new JTextField("103", 3);
 	JTextField port = new JTextField("12345", 5);
 	JTextField name = new JTextField("", 20);
 	boolean isOkPressed = false;
