@@ -1,4 +1,4 @@
-package com.sdsoft.ui;
+package com.sdsoft.ui.common;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 import com.sdsoft.model.gameplay.Player;
+import com.sdsoft.ui.drivers.MainUI;
 
 public class LungePanel extends JPanel {
 	// JButton ready = new JButton("Ready");

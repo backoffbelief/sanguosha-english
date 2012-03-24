@@ -1,4 +1,4 @@
-package com.sdsoft.ui;
+package com.sdsoft.ui.gameplay;
 
 import java.awt.BorderLayout;
 
