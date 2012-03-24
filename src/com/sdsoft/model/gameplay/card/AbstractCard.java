@@ -8,14 +8,16 @@ public class AbstractCard implements Card {
 		CLUB;
 	}
 
+	//##Michael 20120324 --> A bit of renaming to match typical English translations.
+	//						 Also corrected American spelling
 	public enum CardType {
 		BASIC(null),
-		BAG(null),
+		TOOL(null),
 		EQUIPMENT(null),
-		DELAY_BAG(BAG),
-		INSTANT_BAG(BAG),
+		DELAYED_TOOL(TOOL),
+		INSTANT_TOOL(TOOL),
 		WEAPON(EQUIPMENT),
-		ARMOR(EQUIPMENT),
+		ARMOUR(EQUIPMENT),
 		PLUS_HORSE(EQUIPMENT),
 		MINUS_HORSE(EQUIPMENT);
 		CardType parent;
